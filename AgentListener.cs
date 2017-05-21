@@ -29,7 +29,7 @@
                 var botAccount = new ChannelAccount(fromId, fromName);
                 var connector = new ConnectorClient(new Uri(serviceUrl));
 
-                IMessageActivity activity = Activity.CreateMessageActivity();
+                IMessageActivity activity = Microsoft.Bot.Connector.Activity.CreateMessageActivity();
 
                 if (!string.IsNullOrEmpty(conversationId) && !string.IsNullOrEmpty(channelId))
                 {
@@ -45,7 +45,7 @@
                 activity.Conversation = new ConversationAccount(id: conversationId);
                 activity.Text = message;
                 activity.Locale = "en-Us";
-                await connector.Conversations.SendToConversationAsync((Activity)activity);
+                await connector.Conversations.SendToConversationAsync((Microsoft.Bot.Connector.Activity)activity);
             }
             catch (Exception exp)
             {
