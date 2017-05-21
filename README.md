@@ -1,4 +1,8 @@
 # Skype Calling Bot Sample
+AdamIVRSample
+856f51ae-2d6a-44ba-b02d-f156c6857bd9
+oaaWqx7uLq29wEQjxVjhTEk
+
 
 A sample bot showing how to use the Skype Bot Plaform for Calling API for receiving and handling Skype voice calls.
 
